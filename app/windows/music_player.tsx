@@ -105,7 +105,7 @@ export default function MusicWindow() {
         </div>
 
         <div className="flex flex-col gap-2">
-          <h2 className="text-2xl" style={{ fontFamily: "var(--font-pixelify)" }}>
+          <h2 className="text-xl" style={{ fontFamily: "var(--font-pixelify)" }}>
             {currentSong.name}
           </h2>
           <p className="text-sm text-gray-700" style={{ fontFamily: "var(--font-raleway)" }}>

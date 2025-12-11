@@ -34,7 +34,7 @@ export default function Home() {
         <div className="absolute inset-0 z-999 flex items-center justify-center bg-black/40 backdrop-blur-sm">
           <div className="bg-white rounded-xl shadow-xl p-8 w-[350px] text-center border border-gray-200">
             
-            {/* Title */}
+            {/* title */}
             <h1
               className="text-2xl font-bold mb-4"
               style={{ fontFamily: "var(--font-pixelify)" }}
@@ -42,7 +42,7 @@ export default function Home() {
               hallo there -_-
             </h1>
 
-            {/* Message */}
+            {/* message */}
             <p
               className="text-gray-700 mb-6 leading-relaxed"
               style={{ fontFamily: "var(--font-raleway)" }}
@@ -51,7 +51,15 @@ export default function Home() {
               <span className="font-semibold"> 3 days</span> and it should be final.
               <br />
               Sorry for the inconvenience!
+              <br /><br />
+              You can still explore some features:  
+              <ul className="list-disc list-inside mt-2">
+                <li>Click on the squares on the side (info not final)</li>
+                <li>Click on the project containers (2nd box) to visit their GitHub pages</li>
+                <li>The music player (5th box) is fully functional</li>
+              </ul>
             </p>
+
 
             {/* close button */}
             <button

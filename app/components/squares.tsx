@@ -70,7 +70,7 @@ export default function ClickableSquares() {
     if (!windows.some((w) => w.id === id)) {
       const size =
         id === 5 // Music Player
-          ? { w: 300, h: 350 }
+          ? { w: 300, h: 340 }
           : { w: 700, h: 500 }; // other windows
       setWindows((prev) => [
         ...prev,
