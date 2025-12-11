@@ -14,26 +14,40 @@ export default function ProjectsWindow() {
 
       {/* project 1 */}
       <ProjectItem
-        title="Project One"
+        title="Drug resistance prediction of Mtb using ML"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Aliquam sit amet sapien vel nisi malesuada placerat."
-        tags={["React", "UI/UX", "Frontend"]}
+        tags={["Python", "Numpy", "Pandas"]}
+        link="https://github.com/1bellaa/ths-st1-tb"
       />
 
       <div className="w-full h-0.5 bg-[#E2E2E2] my-1 shrink-0"></div>
 
       {/* project 2 */}
       <ProjectItem
-        title="Project Two"
+        title="Profs 2 Pick"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at risus urna. Suspendisse potenti. Integer feugiat fermentum elit."
-        tags={["Next.js", "Design", "API"]}
+        tags={["Handlebars", "HTML", "CSS", "Javascript", "Secure Web Development"]}
+        link="https://github.com/NARSerrato/CSSECDV-main"
       />
 
       <div className="w-full h-0.5 bg-[#E2E2E2] my-1 shrink-0"></div>
+      
       {/* project 3 */}
       <ProjectItem
-        title="Project Three"
+        title="Plately"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec diam eu eros accumsan tempor id et odio."
-        tags={["TypeScript", "System", "Backend"]}
+        tags={["UI/UX", "Database design", "Java", "Android Studio"]}
+        link="https://github.com/nathan-andrei/Plately"
+      />
+
+      <div className="w-full h-0.5 bg-[#E2E2E2] my-1 shrink-0"></div>
+      
+      {/* project 4 */}
+      <ProjectItem
+        title="Animo Portal"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec diam eu eros accumsan tempor id et odio."
+        tags={["TypeScript", "Next.js", "Node.js", "Database design", "Distributed systems"]}
+        link="https://github.com/jeanfran09/enrollment-system"
       />
 
     </div>
@@ -46,16 +60,25 @@ function ProjectItem({
   title,
   description,
   tags,
+  link,
 }: {
   title: string;
   description: string;
   tags: string[];
+  link: string;
 }) {
   return (
     <div className="flex gap-4 items-start">
 
-      {/* left container */}
-      <div className="w-[300px] h-[180px] bg-gray-200 rounded-md shrink-0"></div>
+      {/* left container clickable */}
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-[300px] h-[180px] shrink-0 transform transition-transform duration-300 hover:scale-105"
+      >
+        <div className="w-full h-full bg-gray-200 rounded-md"></div>
+      </a>
 
       {/* right container */}
       <div className="flex flex-col">

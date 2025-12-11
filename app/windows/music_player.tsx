@@ -125,7 +125,7 @@ export default function MusicWindow() {
         <div className="w-full h-2 bg-gray-300 rounded-full overflow-hidden">
           <div
             className="h-2 bg-blue-500 rounded-full"
-            style={{ width: `${progressPercent}%` }}
+            style={{ width: `${progressPercent}%`, background: "linear-gradient(to right, #7AE582, #00A5CF)"}}
           ></div>
         </div>
         <div className="flex justify-between text-xs text-gray-500">

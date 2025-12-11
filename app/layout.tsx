@@ -14,7 +14,7 @@ const pixelify = Pixelify_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Andrea Loria",
+  title: "andrea's desktop",
   description: "Andrea Loria is a Computer Science student at De La Salle University",
 };
 

@@ -10,7 +10,12 @@ export default function AboutWindow() {
       <SectionWrapper>
         <div className="flex gap-4 items-center">
           {/* picture container */}
-          <div className="w-150 h-40 bg-gray-200 rounded-md"></div>
+         <div
+          className="w-[600px] h-[150px] rounded-md border-2 border-gray-200 bg-cover bg-center"
+          style={{ backgroundImage: "url('/images/andrea.jpg')" }}
+        ></div>
+
+
 
           {/* text container */}
           <div className="flex flex-col">
@@ -27,10 +32,9 @@ export default function AboutWindow() {
               className="text-sm mt-1 leading-relaxed"
               style={{ fontFamily: "var(--font-raleway)" }}
             >
-              I’m just a girl trying to contribute to the world one code at a
-              time. Eager to work in different things by combining the artistic
-              side and the technical — making sure everything is accessible,
-              inclusive, creative, and never loses its human-touch.
+              Just a girl trying to contribute to the world one line of code at a time.
+              I bring together creativity and technical skill to create work that’s accessible, 
+              inclusive, and grounded in a strong sense of human connection.
             </p>
           </div>
         </div>
@@ -44,7 +48,7 @@ export default function AboutWindow() {
         <SquareAndText
           squareSize={50}
           title="De La Salle University"
-          subtitle="BS Computer Science"
+          subtitle="BS Computer Science Major in Software Technology"
         />
       </LabeledSection>
 
@@ -55,8 +59,20 @@ export default function AboutWindow() {
       <LabeledSection title="Organizations">
         <SquareAndText
           squareSize={50}
-          title="Organization Name"
-          subtitle="Position or Description"
+          title="DLSU Bioinformatics"
+          subtitle="Research member"
+        />
+        
+        <SquareAndText
+          squareSize={50}
+          title="Student Discipline Formation Office (SDFO)"
+          subtitle="VP for Communications, AVP for Creatives, Creatives Officer"
+        />
+
+        <SquareAndText
+          squareSize={50}
+          title="Computer Studies Government (CSG)"
+          subtitle="Finance Director, Finance Executive, Internal Relations Executive"
         />
       </LabeledSection>
 
@@ -67,8 +83,8 @@ export default function AboutWindow() {
       <LabeledSection title="Work Experience">
         <SquareAndText
           squareSize={50}
-          title="Job / Internship"
-          subtitle="Role / Field"
+          title="Freelance"
+          subtitle="Marketing / SEO Assistant"
         />
       </LabeledSection>
 
@@ -139,13 +155,13 @@ function InterestsSection() {
   const interests = [
     "UI/UX",
     "Design",
-    "Frontend",
-    "Cats",
+    "Programming",
+    "Baking",
     "Art",
     "Gaming",
     "Music",
-    "Cosmos",
-    "Tea",
+    "Comics",
+    "Cute things yes",
   ];
 
   const [items, setItems] = useState(
